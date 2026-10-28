@@ -4,26 +4,26 @@
 class Bm < Formula
   desc "Browser profile and session sandbox manager for Chrome and Edge"
   homepage "https://github.com/limmytian/bm"
-  version "0.0.6"
+  version "0.0.7"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/limmytian/bm/releases/download/v0.0.6/bm-0.0.6-darwin-arm64.tar.gz"
-      sha256 "64d46d83784c6c5e91472fdd82db905a2fbf1f024fad1955a8cf5e6ba3478efd"
+      url "https://github.com/limmytian/bm/releases/download/v0.0.7/bm-0.0.7-darwin-arm64.tar.gz"
+      sha256 "1f61c9714f33565944e1ef000a469bbdddae40585b28c7782cf3298f45701b85"
     else
-      url "https://github.com/limmytian/bm/releases/download/v0.0.6/bm-0.0.6-darwin-x64.tar.gz"
-      sha256 "cfdc691e7458366bb4cac53f82e369f9f41965d59230faff7c816b61b8d5724b"
+      url "https://github.com/limmytian/bm/releases/download/v0.0.7/bm-0.0.7-darwin-x64.tar.gz"
+      sha256 "da3cac3065d24b8e800216648faa6bedc619e7ce944dc129d2276f574631a571"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/limmytian/bm/releases/download/v0.0.6/bm-0.0.6-linux-arm64.tar.gz"
-      sha256 "8decfbe7b0dd1f474ba1949a7fce05c99bc8f3aad81a1f08f5f117b8b3c8636f"
+      url "https://github.com/limmytian/bm/releases/download/v0.0.7/bm-0.0.7-linux-arm64.tar.gz"
+      sha256 "ba25f82e7342448879bcd4c55ed8be60cfcfd6c7c23e71e8dfdd24001a29575c"
     elsif Hardware::CPU.intel?
-      url "https://github.com/limmytian/bm/releases/download/v0.0.6/bm-0.0.6-linux-x64.tar.gz"
-      sha256 "149dbf5455472bc9b65257ce6033fa37abe54071fc2febb8695bdf335e2a94fe"
+      url "https://github.com/limmytian/bm/releases/download/v0.0.7/bm-0.0.7-linux-x64.tar.gz"
+      sha256 "fa50fda009e8b808a2606a547e0e997fc7cd5ec75163f1899fc2ca29a2ec8880"
     end
   end
 
